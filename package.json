@@ -1,0 +1,31 @@
+{
+  "name": "maljulim-ko",
+  "version": "0.1.0",
+  "description": "한국어 AI 응답의 의미는 유지하고 출력 토큰을 줄이는 Codex·Claude·Gemini 스킬",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "maljulim-install": "./bin/install.mjs",
+    "maljulim-measure": "./bin/measure.mjs",
+    "maljulim-bench": "./bin/bench.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "commands/",
+    "benchmarks/",
+    "README.md",
+    "NOTICE.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test --test-isolation=none",
+    "bench": "node bin/bench.mjs"
+  },
+  "dependencies": {
+    "gpt-tokenizer": "3.4.0"
+  }
+}
